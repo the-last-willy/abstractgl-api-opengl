@@ -1,1 +1,1 @@
-# abstractgl-api-opengl
+# AbstractGL/API/OpenGL

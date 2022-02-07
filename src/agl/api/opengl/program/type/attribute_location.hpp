@@ -15,7 +15,7 @@ public:
 
     constexpr
     AttribLoc(OptAttribLoc l)
-        : value(static_cast<GLint>(l))
+        : value(static_cast<GLuint>(l))
     {}
 
     constexpr

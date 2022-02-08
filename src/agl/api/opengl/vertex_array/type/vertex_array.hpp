@@ -1,5 +1,7 @@
 #pragma once
 
+#include "vertex_array_name.hpp"
+
 namespace agl::opengl {
 
 // - RAII.
@@ -28,6 +30,10 @@ struct VertexArray {
         name = va.name;
         va.name = GL_NONE;
         return *this;
+    }
+
+    operator VertexArrayName() const noexcept {
+        return VertexArrayName(name);
     }
 
     operator GLuint() const noexcept {

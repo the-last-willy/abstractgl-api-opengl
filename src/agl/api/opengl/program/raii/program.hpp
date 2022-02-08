@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../type/optional_program_name.hpp"
+
 namespace agl::opengl {
 
 // - RAII.
@@ -28,6 +30,10 @@ struct Program {
         name = p.name;
         p.name = GL_NONE;
         return *this;
+    }
+
+    operator OptProgramName() const noexcept {
+        return OptProgramName(name);
     }
 
     operator GLuint() const noexcept {

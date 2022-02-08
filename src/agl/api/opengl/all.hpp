@@ -1,6 +1,8 @@
 #pragma once
 
-#include "all/core.hpp"
+#include "core.hpp"
+#include "ext.hpp"
+
 #include "buffer_mapping/all.hpp"
 #include "buffer/all.hpp"
 #include "capability/all.hpp"

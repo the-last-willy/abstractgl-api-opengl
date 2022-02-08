@@ -1,5 +1,6 @@
 #pragma once
 
+#include "all/core.hpp"
 #include "buffer_mapping/all.hpp"
 #include "buffer/all.hpp"
 #include "capability/all.hpp"
@@ -10,4 +11,3 @@
 #include "sampler/all.hpp"
 #include "shader/all.hpp"
 #include "texture/all.hpp"
-#include "vertex_array/all.hpp"

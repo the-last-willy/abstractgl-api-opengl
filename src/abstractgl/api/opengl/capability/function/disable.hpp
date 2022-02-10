@@ -1,6 +1,6 @@
 #pragma once
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 void Disable(GLenum cap) {
     glDisable(cap);

@@ -1,19 +1,19 @@
 #pragma once
 
-#include "../buffer.hpp"
+#include "../../type/buffer_name.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 // The return type if obviously inadequate.
 // Might be multiple values ?
 // A boolean could be a better fit ?
 inline
 GLint GetNamedBufferParameter(
-    const BufferObj& b,
+    BufferName buffer,
     GLenum pname)
 {
     GLint params;
-    glGetNamedBufferParameteriv(b, pname, &params);
+    glGetNamedBufferParameteriv(buffer, pname, &params);
     return params;
 }
 

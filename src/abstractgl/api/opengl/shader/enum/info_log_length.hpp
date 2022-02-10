@@ -1,6 +1,6 @@
 #pragma once
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 struct EnumInfoLogLength {
     constexpr

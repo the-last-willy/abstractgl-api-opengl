@@ -1,6 +1,6 @@
 #pragma once
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 struct EnumVertexShader {
     static constexpr auto _enum = GL_VERTEX_SHADER;

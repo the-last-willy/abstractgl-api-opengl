@@ -2,7 +2,7 @@
 
 #include "../../type/shader_name.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 inline
 void

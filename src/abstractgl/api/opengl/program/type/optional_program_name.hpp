@@ -1,6 +1,6 @@
 #pragma once
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 struct OptProgramName {
     GLuint name = GL_NONE;

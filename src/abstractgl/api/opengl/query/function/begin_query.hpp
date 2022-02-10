@@ -1,8 +1,6 @@
 #pragma once
 
-#include "raii/query.hpp"
-
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 inline
 void BeginQuery(GLenum target, const Query& id) {

@@ -2,7 +2,7 @@
 
 #include "../core/get_shaderiv.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 inline
 GLint

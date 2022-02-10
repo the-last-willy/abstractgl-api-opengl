@@ -1,16 +1,16 @@
 #pragma once
 
-#include "../../../buffer/buffer.hpp"
+#include "../../../buffer/type/buffer_name.hpp"
 #include "../../type/vertex_array_name.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 inline
 void
 VertexArrayVertexBuffer(
     VertexArrayName vaobj,
     GLuint bindingindex,
-    const BufferObj& buffer,
+    BufferName buffer,
 	GLintptr offset,
 	GLsizei stride)
 {

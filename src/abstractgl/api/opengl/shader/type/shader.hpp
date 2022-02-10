@@ -3,7 +3,7 @@
 #include "../function/core/create_shader.hpp"
 #include "shader_name.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 /**
  * Invariants:

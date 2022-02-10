@@ -1,6 +1,8 @@
 #pragma once
 
-namespace agl::opengl {
+#include "buffer_name.hpp"
+
+namespace agl::api::opengl {
 
 // - RAII.
 struct BufferObj {
@@ -28,6 +30,10 @@ struct BufferObj {
         name = b.name;
         b.name = GL_NONE;
         return *this;
+    }
+
+    operator BufferName() const noexcept {
+        return BufferName(name);
     }
 
     operator GLuint() const noexcept {

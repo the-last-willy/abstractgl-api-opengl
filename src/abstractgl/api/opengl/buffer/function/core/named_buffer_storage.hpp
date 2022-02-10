@@ -1,15 +1,15 @@
 #pragma once
 
-#include "buffer.hpp"
+#include "../../type/buffer_name.hpp"
 
 #include <concepts>
 #include <initializer_list>
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 inline
 void NamedBufferStorage(
-    const BufferObj& buffer,
+    BufferName buffer,
     GLsizei size,
     const GLvoid* data,
     GLenum flags = GL_NONE)
@@ -23,7 +23,7 @@ void NamedBufferStorage(
 
 inline
 void NamedBufferStorage(
-    const BufferObj& buffer,
+    BufferName buffer,
     GLsizei size,
     GLenum flags = GL_NONE)
 {
@@ -45,12 +45,12 @@ requires(Container c) {
     { size(c) } -> std::integral;
 }
 void NamedBufferStorage(
-    const BufferObj& b,
+    BufferName buffer,
     const Container& c,
     GLenum flags = GL_NONE)
 {
     glNamedBufferStorage(
-        b,
+        buffer,
         size(c) * sizeof(Container::value_type),
         data(c),
         flags);
@@ -58,12 +58,12 @@ void NamedBufferStorage(
 
 template<typename T>
 void NamedBufferStorage(
-    const BufferObj& b,
+    BufferName buffer,
     const std::initializer_list<T>& il,
     GLenum flags = GL_NONE)
 {
     glNamedBufferStorage(
-        b,
+        buffer,
         size(il) * sizeof(T),
         data(il),
         flags);

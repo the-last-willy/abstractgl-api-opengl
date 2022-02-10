@@ -1,10 +1,10 @@
 #pragma once
 
-#include "buffer.hpp"
+#include "../../type/buffer_name.hpp"
 
 #include <concepts>
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 ////////////////////////////////////////////////////////////////////////////////
 // Standard library compatibility.
@@ -17,12 +17,12 @@ requires(Container c) {
     { size(c) } -> std::integral;
 }
 void GetNamedBufferSubData(
-    const BufferObj& b,
+    BufferName buffer,
     GLintptr offset,
     Container& c)
 {
     glGetNamedBufferSubData(
-        b,
+        buffer,
         offset,
         GLsizei(size(c)) * sizeof(Container::value_type),
         data(c));

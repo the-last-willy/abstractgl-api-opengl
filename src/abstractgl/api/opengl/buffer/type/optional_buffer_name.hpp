@@ -6,15 +6,14 @@ namespace agl::api::opengl {
  * Invariants:
  * - (TODO) OpenGL resource ??
  */
-class OptVertexArrayName {
+class OptBufferName {
     GLuint name = GL_NONE;
 
 public:
-
-    OptVertexArrayName() = default;
+    OptBufferName() = default;
 
     // Should check that 'name' is an OpenGL name ??
-    OptVertexArrayName(GLuint name)
+    OptBufferName(GLuint name)
         : name(name)
     {}
 

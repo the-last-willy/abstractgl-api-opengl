@@ -2,7 +2,7 @@
 
 #include <compare>
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 struct DrawElementsIndirectCommand {
     // Number of indices (not primitives).

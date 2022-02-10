@@ -1,6 +1,6 @@
 #pragma once
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 struct EnumFragmentShader {
     static constexpr auto _enum = GL_FRAGMENT_SHADER;

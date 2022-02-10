@@ -1,8 +1,8 @@
 #pragma once
 
-#include "type/enabled_capability.hpp"
+#include "../type/core/enabled_capability.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 EnabledCap Enable(GLenum cap) {
     glEnable(cap);

@@ -2,7 +2,7 @@
 
 #include "raii/query.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 inline
 void GetQueryObjectui64v(

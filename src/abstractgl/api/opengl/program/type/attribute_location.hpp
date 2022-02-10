@@ -2,7 +2,7 @@
 
 #include "optional_attribute_location.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 class AttribLoc {
     GLuint value;

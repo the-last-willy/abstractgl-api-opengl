@@ -2,7 +2,7 @@
 
 #include "vertex_array_name.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 // - RAII.
 struct VertexArray {

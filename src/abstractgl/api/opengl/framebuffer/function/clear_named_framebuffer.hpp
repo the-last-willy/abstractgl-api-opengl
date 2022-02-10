@@ -2,7 +2,7 @@
 
 #include <array>
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 // How to handle default framebuffer (= 0) ?
 inline

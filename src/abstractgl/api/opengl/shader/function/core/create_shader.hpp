@@ -5,7 +5,7 @@
 #include "../../enum/vertex_shader.hpp"
 #include "../../type/shader_name.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 template<typename SHADER>
 ShaderName CreateShader(SHADER) {

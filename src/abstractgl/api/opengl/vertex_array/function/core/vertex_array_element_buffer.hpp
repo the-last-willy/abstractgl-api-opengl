@@ -1,15 +1,15 @@
 #pragma once
 
-#include "../../../buffer/buffer.hpp"
+#include "../../../buffer/type/buffer_name.hpp"
 #include "../../type/vertex_array_name.hpp"
 
-namespace agl::opengl {
+namespace agl::api::opengl {
 
 inline
 void
 VertexArrayElementBuffer(
     VertexArrayName vaobj,
-    const BufferObj& buffer)
+    BufferName buffer)
 {
     glVertexArrayElementBuffer(
         vaobj,

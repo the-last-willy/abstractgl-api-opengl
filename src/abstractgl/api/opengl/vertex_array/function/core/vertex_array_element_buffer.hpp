@@ -9,7 +9,7 @@ inline
 void
 VertexArrayElementBuffer(
     VertexArrayName vaobj,
-    const Buffer& buffer)
+    const BufferObj& buffer)
 {
     glVertexArrayElementBuffer(
         vaobj,

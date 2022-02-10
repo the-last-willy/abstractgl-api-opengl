@@ -6,7 +6,7 @@ namespace agl::opengl {
 
 inline
 BufferMapping MapNamedBufferRange(
-    const Buffer& b,
+    const BufferObj& b,
 	GLintptr offset,
 	GLsizei length,
 	GLbitfield access) 

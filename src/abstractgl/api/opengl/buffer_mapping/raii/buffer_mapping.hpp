@@ -16,9 +16,9 @@ namespace agl::opengl {
 struct BufferMapping {
     // Has to be first in case of reinterpret_cast (type aliasing or whatever) ?
     void* mapping = nullptr;
-    const Buffer* buffer;
+    const BufferObj* buffer;
 
-    BufferMapping(const Buffer& b, void* ptr)
+    BufferMapping(const BufferObj& b, void* ptr)
         : mapping(&ptr)
         , buffer(&b)
     {}

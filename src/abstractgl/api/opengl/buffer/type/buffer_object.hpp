@@ -3,27 +3,27 @@
 namespace agl::opengl {
 
 // - RAII.
-struct Buffer {
+struct BufferObj {
     GLuint name;
 
-    Buffer() {
+    BufferObj() {
         glCreateBuffers(1, &name);
     }
 
-    Buffer(const Buffer&) = delete;
+    BufferObj(const BufferObj&) = delete;
 
-    Buffer(Buffer&& b) {
+    BufferObj(BufferObj&& b) {
         name = b.name;
         b.name = GL_NONE;
     }
 
-    ~Buffer() noexcept {
+    ~BufferObj() noexcept {
         glDeleteBuffers(1, &name);
     }
 
-    Buffer& operator=(const Buffer&) = delete;
+    BufferObj& operator=(const BufferObj&) = delete;
 
-    Buffer& operator=(Buffer&& b) {
+    BufferObj& operator=(BufferObj&& b) {
         glDeleteBuffers(1, &name);
         name = b.name;
         b.name = GL_NONE;

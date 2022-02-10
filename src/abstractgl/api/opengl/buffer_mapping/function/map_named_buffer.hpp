@@ -6,7 +6,7 @@ namespace agl::opengl {
 
 inline
 BufferMapping MapNamedBuffer(
-    const Buffer& b,
+    const BufferObj& b,
     GLbitfield access)
 {
     return BufferMapping(b, glMapNamedBuffer(b, access));

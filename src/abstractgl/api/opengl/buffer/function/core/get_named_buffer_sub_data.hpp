@@ -17,7 +17,7 @@ requires(Container c) {
     { size(c) } -> std::integral;
 }
 void GetNamedBufferSubData(
-    const Buffer& b,
+    const BufferObj& b,
     GLintptr offset,
     Container& c)
 {

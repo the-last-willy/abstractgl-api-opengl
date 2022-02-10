@@ -1,6 +1,6 @@
 #pragma once
 
-#include "buffer.hpp"
+#include "../buffer.hpp"
 
 namespace agl::opengl {
 
@@ -9,7 +9,7 @@ namespace agl::opengl {
 // A boolean could be a better fit ?
 inline
 GLint GetNamedBufferParameter(
-    const Buffer& b,
+    const BufferObj& b,
     GLenum pname)
 {
     GLint params;

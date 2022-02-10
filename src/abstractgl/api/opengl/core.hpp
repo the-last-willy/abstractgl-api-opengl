@@ -12,6 +12,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Functions.
 
+#include "buffer/function/core/get_named_buffer_parameter.hpp"
+#include "buffer/function/core/get_named_buffer_sub_data.hpp"
+#include "buffer/function/core/named_buffer_storage.hpp"
 #include "shader/function/core/get_shaderiv.hpp"
 #include "vertex_array/function/core/enable_vertex_array_attrib.hpp"
 #include "vertex_array/function/core/vertex_array_attrib_binding.hpp"
@@ -22,6 +25,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Types.
 
+#include "buffer/type/buffer_object.hpp"
 #include "vertex_array/type/optional_vertex_array_name.hpp"
 #include "vertex_array/type/vertex_array.hpp"
 #include "vertex_array/type/vertex_array_name.hpp"

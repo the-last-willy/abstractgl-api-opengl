@@ -10,7 +10,7 @@ void
 VertexArrayVertexBuffer(
     VertexArrayName vaobj,
     GLuint bindingindex,
-    const Buffer& buffer,
+    const BufferObj& buffer,
 	GLintptr offset,
 	GLsizei stride)
 {

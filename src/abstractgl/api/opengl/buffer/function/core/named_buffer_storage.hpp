@@ -9,7 +9,7 @@ namespace agl::opengl {
 
 inline
 void NamedBufferStorage(
-    const Buffer& buffer,
+    const BufferObj& buffer,
     GLsizei size,
     const GLvoid* data,
     GLenum flags = GL_NONE)
@@ -23,7 +23,7 @@ void NamedBufferStorage(
 
 inline
 void NamedBufferStorage(
-    const Buffer& buffer,
+    const BufferObj& buffer,
     GLsizei size,
     GLenum flags = GL_NONE)
 {
@@ -45,7 +45,7 @@ requires(Container c) {
     { size(c) } -> std::integral;
 }
 void NamedBufferStorage(
-    const Buffer& b,
+    const BufferObj& b,
     const Container& c,
     GLenum flags = GL_NONE)
 {
@@ -58,7 +58,7 @@ void NamedBufferStorage(
 
 template<typename T>
 void NamedBufferStorage(
-    const Buffer& b,
+    const BufferObj& b,
     const std::initializer_list<T>& il,
     GLenum flags = GL_NONE)
 {

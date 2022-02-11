@@ -1,14 +1,14 @@
 #pragma once
 
-#include "../../type/optional_attribute_location.hpp"
-#include "../../type/optional_program_name.hpp"
+#include "../../type/core/optional_attribute_location.hpp"
+#include "../../type/core/program_name.hpp"
 
 namespace agl::api::opengl {
 
 inline
 OptAttribLoc
 GetAttribLocation(
-    OptProgramName program,
+    ProgramName program,
     const GLchar* name)
 {
     return glGetAttribLocation(

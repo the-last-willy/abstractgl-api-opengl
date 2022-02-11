@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../type/program_object.hpp"
+#include "../../type/core/program_name.hpp"
 
 #include <stdexcept>
 
@@ -8,7 +8,7 @@ namespace agl::api::opengl {
 
 inline
 void ShaderStorageBlockBinding(
-    const Program& program,
+    ProgramName program,
     const GLchar* name,
     GLuint storageBlockBinding)
 {
@@ -20,7 +20,8 @@ void ShaderStorageBlockBinding(
         throw std::runtime_error(
             "Not the name of a resource.");
     }
-    glShaderStorageBlockBinding(program,
+    glShaderStorageBlockBinding(
+        program,
         storageBlockIndex,
         storageBlockBinding);
 }

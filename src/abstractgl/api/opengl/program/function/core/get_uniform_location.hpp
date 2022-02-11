@@ -1,14 +1,14 @@
 #pragma once
 
-#include "../../type/optional_program_name.hpp"
-#include "../../type/optional_uniform_location.hpp"
+#include "../../type/core/program_name.hpp"
+#include "../../type/core/optional_uniform_location.hpp"
 
 namespace agl::api::opengl {
 
 inline
 OptUniformLoc
 GetUniformLocation(
-    OptProgramName program,
+    ProgramName program,
     const GLchar* name)
 {
     return glGetUniformLocation(

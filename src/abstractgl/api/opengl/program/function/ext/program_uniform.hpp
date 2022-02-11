@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../type/program_object.hpp"
+#include "../../type/core/program_name.hpp"
 
 #include <concepts>
 #include <span>
@@ -9,7 +9,7 @@ namespace agl::api::opengl {
 
 inline
 void ProgramUniform3fv(
-    const Program& program,
+    ProgramName program,
     OptUniformLoc location,
     std::span<const GLfloat, 3> value)
 {
@@ -22,7 +22,7 @@ void ProgramUniform3fv(
 
 inline
 void ProgramUniform4fv(
-    const Program& program,
+    ProgramName program,
     OptUniformLoc location,
     GLsizei count,
     const GLfloat* value)
@@ -36,7 +36,7 @@ void ProgramUniform4fv(
 
 inline
 void ProgramUniform4fv(
-    const Program& program,
+    ProgramName program,
     OptUniformLoc location,
     std::span<const GLfloat, 4> value)
 {
@@ -49,7 +49,7 @@ void ProgramUniform4fv(
 
 inline
 void ProgramUniform4fv(
-    const Program& program,
+    ProgramName program,
     OptUniformLoc location,
     std::array<GLfloat, 4> value)
 {

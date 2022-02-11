@@ -5,11 +5,10 @@
 namespace agl::api::opengl {
 
 inline
-void
-LinkProgram(
-    ProgramName program)
+ProgramName
+CreateProgram()
 {
-    glLinkProgram(program);
+    return ProgramName(glCreateProgram());
 }
 
 }

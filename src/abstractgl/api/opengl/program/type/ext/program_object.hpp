@@ -7,28 +7,29 @@ namespace agl::api::opengl {
 
 // - RAII.
 class ProgramObj : public ProgramName {
-    ProgramName name = CreateProgram();
-
 public:
-    ProgramObj() = default;
+    ProgramObj()
+        : ProgramName(CreateProgram())
+    {}
 
     ProgramObj(const ProgramObj&) = delete;
     
-    ProgramObj(ProgramObj&& p) {
-        name = p.name;
-        p.name = ProgramName(GL_NONE);
+    ProgramObj(ProgramObj&& p)
+        : ProgramName(p)
+    {
+        static_cast<ProgramName&>(p) = ProgramName(GL_NONE);
     }
 
     ~ProgramObj() noexcept {
-        glDeleteProgram(name);
+        glDeleteProgram(*this);
     }
 
     ProgramObj& operator=(const ProgramObj&) = delete;
 
     ProgramObj& operator=(ProgramObj&& p) {
-        glDeleteProgram(name);
-        name = p.name;
-        p.name = ProgramName(GL_NONE);
+        glDeleteProgram(*this);
+        static_cast<ProgramName&>(*this) = static_cast<ProgramName&>(p);
+        static_cast<ProgramName&>(p) = ProgramName(GL_NONE);
         return *this;
     }
 };

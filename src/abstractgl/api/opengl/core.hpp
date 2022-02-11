@@ -3,6 +3,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Enums.
 
+#include "buffer/enum/shader_storage_buffer.hpp"
 #include "shader/enum/compile_status.hpp"
 #include "shader/enum/compute_shader.hpp"
 #include "shader/enum/fragment_shader.hpp"
@@ -12,6 +13,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Functions.
 
+#include "buffer/function/core/bind_buffer.hpp"
 #include "buffer/function/core/get_named_buffer_parameter_iv.hpp"
 #include "buffer/function/core/named_buffer_storage.hpp"
 #include "buffer/function/std/get_named_buffer_sub_data.hpp"
@@ -46,6 +48,7 @@
 // Types.
 
 #include "buffer/type/core/buffer_name.hpp"
+#include "buffer/type/core/buffer_target.hpp"
 #include "buffer/type/core/optional_buffer_name.hpp"
 #include "buffer/type/ext/buffer_object.hpp"
 // #include "buffer_mapping/type/core/buffer_mapping.hpp"

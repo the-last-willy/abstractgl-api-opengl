@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../../type/core/buffer_name.hpp"
+#include "../core/named_buffer_storage.hpp"
 
 #include <concepts>
 #include <initializer_list>
@@ -20,9 +21,10 @@ void NamedBufferStorage(
     const Container& c,
     GLenum flags = GL_NONE)
 {
-    glNamedBufferStorage(
+    auto size = static_cast<GLsizei>(std::size(c));
+    NamedBufferStorage(
         buffer,
-        std::size(c) * sizeof(Container::value_type),
+        size * sizeof(Container::value_type),
         std::data(c),
         flags);
 }
@@ -33,9 +35,10 @@ void NamedBufferStorage(
     const std::initializer_list<T>& il,
     GLenum flags = GL_NONE)
 {
-    glNamedBufferStorage(
+    auto size = static_cast<GLsizei>(std::size(il));
+    NamedBufferStorage(
         buffer,
-        std::size(il) * sizeof(T),
+        size * sizeof(T),
         std::data(il),
         flags);
 }

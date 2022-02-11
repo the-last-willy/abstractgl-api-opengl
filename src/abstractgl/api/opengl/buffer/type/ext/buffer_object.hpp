@@ -1,6 +1,6 @@
 #pragma once
 
-#include "buffer_name.hpp"
+#include "../core/buffer_name.hpp"
 
 namespace agl::api::opengl {
 

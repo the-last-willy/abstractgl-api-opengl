@@ -12,9 +12,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Functions.
 
-#include "buffer/function/core/get_named_buffer_parameter.hpp"
-#include "buffer/function/core/get_named_buffer_sub_data.hpp"
+#include "buffer/function/core/get_named_buffer_parameter_iv.hpp"
 #include "buffer/function/core/named_buffer_storage.hpp"
+#include "buffer/function/std/get_named_buffer_sub_data.hpp"
+#include "buffer/function/std/named_buffer_storage.hpp"
 // #include "buffer_mapping/function/core/map_named_buffer.hpp"
 // #include "buffer_mapping/function/core/map_named_buffer_range.hpp"
 #include "capability/function/disable.hpp"
@@ -44,9 +45,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Types.
 
-#include "buffer/type/buffer_name.hpp"
-#include "buffer/type/buffer_object.hpp"
-#include "buffer/type/optional_buffer_name.hpp"
+#include "buffer/type/core/buffer_name.hpp"
+#include "buffer/type/core/optional_buffer_name.hpp"
+#include "buffer/type/ext/buffer_object.hpp"
 // #include "buffer_mapping/type/core/buffer_mapping.hpp"
 #include "capability/type/core/enabled_capability.hpp"
 #include "capability/type/ext/scoped.hpp"

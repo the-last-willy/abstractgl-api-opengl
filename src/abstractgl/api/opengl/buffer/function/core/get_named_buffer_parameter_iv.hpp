@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../type/buffer_name.hpp"
+#include "../../type/core/buffer_name.hpp"
 
 namespace agl::api::opengl {
 
@@ -8,7 +8,7 @@ namespace agl::api::opengl {
 // Might be multiple values ?
 // A boolean could be a better fit ?
 inline
-GLint GetNamedBufferParameter(
+GLint GetNamedBufferParameteriv(
     BufferName buffer,
     GLenum pname)
 {

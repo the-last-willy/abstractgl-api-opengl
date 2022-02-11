@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../core/get_shaderiv.hpp"
+#include "../core/get_shader_iv.hpp"
 
 namespace agl::api::opengl {
 

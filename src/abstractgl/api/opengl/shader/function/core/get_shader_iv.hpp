@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../type/shader_name.hpp"
+#include "../../type/core/shader_name.hpp"
 
 namespace agl::api::opengl {
 

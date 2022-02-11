@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../function/core/create_shader.hpp"
-#include "shader_name.hpp"
+#include "../../function/core/create_shader.hpp"
+#include "../core/shader_name.hpp"
 
 namespace agl::api::opengl {
 

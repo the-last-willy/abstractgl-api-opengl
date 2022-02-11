@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../../../buffer/type/core/buffer_name.hpp"
-#include "../../type/vertex_array_name.hpp"
+#include "../../type/core/vertex_array_name.hpp"
 
 namespace agl::api::opengl {
 

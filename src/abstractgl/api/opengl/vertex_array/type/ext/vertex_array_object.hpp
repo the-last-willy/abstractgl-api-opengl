@@ -1,31 +1,31 @@
 #pragma once
 
-#include "vertex_array_name.hpp"
+#include "../core/vertex_array_name.hpp"
 
 namespace agl::api::opengl {
 
 // - RAII.
-struct VertexArray {
+struct VertexArrayObj {
     GLuint name = 0;
 
-    VertexArray() {
+    VertexArrayObj() {
         glCreateVertexArrays(1, &name);
     }
 
-    VertexArray(const VertexArray&) = delete;
+    VertexArrayObj(const VertexArrayObj&) = delete;
     
-    VertexArray(VertexArray&& va) {
+    VertexArrayObj(VertexArrayObj&& va) {
         name = va.name;
         va.name = GL_NONE;
     }
 
-    ~VertexArray() noexcept {
+    ~VertexArrayObj() noexcept {
         glDeleteVertexArrays(1, &name);
     }
 
-    VertexArray& operator=(const VertexArray&) = delete;
+    VertexArrayObj& operator=(const VertexArrayObj&) = delete;
 
-    VertexArray& operator=(VertexArray&& va) {
+    VertexArrayObj& operator=(VertexArrayObj&& va) {
         glDeleteVertexArrays(1, &name);
         name = va.name;
         va.name = GL_NONE;

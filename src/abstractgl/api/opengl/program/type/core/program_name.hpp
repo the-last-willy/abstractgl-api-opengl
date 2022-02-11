@@ -6,7 +6,7 @@ class ProgramName {
     GLuint name = GL_NONE;
 
 public:
-    ProgramName() = default;
+    ProgramName() = delete;
 
     explicit
     ProgramName(GLuint name) noexcept

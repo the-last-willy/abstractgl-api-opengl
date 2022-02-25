@@ -4,17 +4,13 @@
 
 namespace agl::api::opengl {
 
-// The return type if obviously inadequate.
-// Might be multiple values ?
-// A boolean could be a better fit ?
 inline
-GLint GetNamedBufferParameteriv(
+void GetNamedBufferParameteriv(
     BufferName buffer,
-    GLenum pname)
+    GLenum pname,
+    GLint* data)
 {
-    GLint params;
-    glGetNamedBufferParameteriv(buffer, pname, &params);
-    return params;
+    glGetNamedBufferParameteriv(buffer, pname, data);
 }
 
 }

@@ -4,6 +4,8 @@
 // Enums.
 
 #include "buffer/enum/shader_storage_buffer.hpp"
+#include "common/enum/none.hpp"
+#include "common/enum/zero.hpp"
 #include "shader/enum/compile_status.hpp"
 #include "shader/enum/compute_shader.hpp"
 #include "shader/enum/fragment_shader.hpp"

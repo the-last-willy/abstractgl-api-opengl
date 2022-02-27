@@ -18,7 +18,7 @@
 #include "buffer/function/core/bind_buffer.hpp"
 #include "buffer/function/core/get_named_buffer_parameter_iv.hpp"
 #include "buffer/function/core/named_buffer_storage.hpp"
-#include "buffer/function/ext/get_named_buffer_parameter_iv.hpp"
+#include "buffer/function/ext/get_named_buffer_parameter.hpp"
 #include "buffer/function/std/get_named_buffer_sub_data.hpp"
 #include "buffer/function/std/named_buffer_storage.hpp"
 // #include "buffer_mapping/function/core/map_named_buffer.hpp"

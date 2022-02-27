@@ -7,12 +7,12 @@
 namespace agl::api::opengl {
 
 inline
-GLint GetNamedBufferParameteriv(
+GLint GetNamedBufferParameter(
     BufferName buffer,
-    decltype(BUFFER_SIZE) bs)
+    decltype(BUFFER_SIZE) pname)
 {
     GLint data;
-    GetNamedBufferParameteriv(buffer, bs, &data);
+    GetNamedBufferParameteriv(buffer, pname, &data);
     return data;
 }
 

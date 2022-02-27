@@ -61,7 +61,7 @@
 #include "capability/type/core/enabled_capability.hpp"
 #include "capability/type/ext/scoped.hpp"
 #include "capability/type/ext/scoped_capability.hpp"
-#include "draw/draw_elements_indirect_command.hpp"
+#include "draw/type/core/draw_elements_indirect_command.hpp"
 #include "framebuffer/type/core/framebuffer_name.hpp"
 #include "framebuffer/type/ext/framebuffer_object.hpp"
 #include "program/type/core/attribute_location.hpp"

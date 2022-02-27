@@ -9,7 +9,7 @@ void ClearNamedFramebufferfv(
     FramebufferName framebuffer,
 	GLenum buffer,
 	GLint drawbuffer,
-	const GLfloat *value)
+	const GLfloat* value)
 {
     glClearNamedFramebufferfv(
         framebuffer,

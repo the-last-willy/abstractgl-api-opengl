@@ -28,6 +28,7 @@
 #include "draw/function/core/draw_elements.hpp"
 #include "framebuffer/function/core/clear_named_framebuffer_fv.hpp"
 #include "framebuffer/function/ext/clear_named_framebuffer.hpp"
+#include "framebuffer/function/std/clear_named_framebuffer.hpp"
 #include "program/function/core/attach_shader.hpp"
 #include "program/function/core/get_attrib_location.hpp"
 #include "program/function/core/get_uniform_location.hpp"

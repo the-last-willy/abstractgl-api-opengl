@@ -25,6 +25,7 @@
 // #include "buffer_mapping/function/core/map_named_buffer_range.hpp"
 #include "capability/function/disable.hpp"
 #include "capability/function/enable.hpp"
+#include "draw/function/core/draw_arrays.hpp"
 #include "draw/function/core/draw_elements.hpp"
 #include "framebuffer/function/core/clear_named_framebuffer_fv.hpp"
 #include "framebuffer/function/ext/clear_named_framebuffer.hpp"
